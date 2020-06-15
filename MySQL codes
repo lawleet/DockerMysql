@@ -1,0 +1,32 @@
+// some docker console commands
+
+docker --version (to check docker version)
+docker hello-world; (to check if the docker is running successfully or not)
+
+docker ping 192.168.99.100 (to ping the server)
+
+docker run -d -P seqvence/static-site 
+
+docker image ls (to check all images)
+
+docker system prune -a (to delete all the images)
+
+// commands to connect docker containeer with Mysql workbench
+
+step 1: 
+docker run -p 3306:3306 -d --name mysql -e MYSQL_ROOT_PASSWORD=password mysql/mysql-server
+
+step 2: ( to check the container)
+docker ps
+
+step 3: (go inside container)
+docker exec -it mysql bash
+
+step 4: (open mysql server)
+mysql -uroot -ppassword
+
+step 5 (create user)
+CREATE USER 'developerfunnel'@'%' IDENTIFIED BY 'password';
+
+> Step 6 (For Admin Access)
+GRANT ALL PRIVILEGES ON * . * TO 'arun'@'%';
