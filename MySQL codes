@@ -26,7 +26,7 @@ step 4: (open mysql server)
 mysql -uroot -ppassword
 
 step 5 (create user)
-CREATE USER 'developerfunnel'@'%' IDENTIFIED BY 'password';
+CREATE USER 'lawleet'@'%' IDENTIFIED BY 'password';
 
 > Step 6 (For Admin Access)
-GRANT ALL PRIVILEGES ON * . * TO 'arun'@'%';
+GRANT ALL PRIVILEGES ON * . * TO 'lawleet'@'%';
